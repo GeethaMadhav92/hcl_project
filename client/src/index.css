@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,800;1,100;1,300;1,400;1,800;1,900&display=swap");
+*,
+select,
+button,
+::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+textarea::-webkit-scrollbar {
+  display: none;
+}
+header {
+  padding: 1em;
+}
+:focus {
+  outline: none;
+}
+.container {
+  display: grid;
+  justify-items: center;
+  gap: 1em;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 2em;
+}
+.input-control {
+  width: 100%;
+  padding: 1em;
+}
+.input-control textarea {
+  width: 100%;
+  padding: 2em;
+  height: 100%;
+  display: flex;
+  background-color: #1d2321;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid;
+  color: #f7f7f2;
+}
+input:focus {
+  outline: none;
+}
+.input-control input::placeholder {
+  font-size: 2rem;
+}
+.selects {
+  display: grid;
+  gap: 0.4em;
+}
+.selects > div {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+.selects select {
+  width: 400px;
+  padding: 1em;
+  background-color: rgb(72, 50, 50);
+  color: #f7f7f2;
+  font-weight: 600;
+}
+button {
+  padding: 1em;
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 2em auto;
+  grid-column: 1/-1;
+  width: 50%;
+  border-radius: 5px;
+}
+
+h1 {
+  color: #f7f7f2;
+  padding: 10px;
+  font-size: 3rem;
+}
+h3 {
+  color: #f7f7f2;
+  font-weight: 400;
+}
+.box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  grid-column: 1/-1;
+  justify-content: center;
+}
+.box p {
+  background-color: rgb(24, 15, 15);
+  width: 80%;
+  color: white;
+  font-size: 1.3rem;
+  padding: 15px;
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    margin-top: 1em;
+    position: relative;
+  }
+  .selects {
+    justify-self: start;
+    /* padding: 1em; */
+    margin-left: 20px;
+  }
+  h3 {
+    margin-top: 10px;
+  }
+  .box {
+    height: auto;
+    background-color: white;
+    bottom: 0;
+    z-index: 3;
+    padding: 10px;
+  }
+  button {
+    padding: 0.5em;
+    font-size: 1.2rem;
+  }
+  .box p {
+    background-color: white;
+    color: black;
+    display: block;
+    padding: 0;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+}
