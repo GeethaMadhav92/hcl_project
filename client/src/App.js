@@ -82,7 +82,7 @@ const App = () => {
           </div>
         </div>
 
-        <button onClick={translate}>Translate</button>
+        <button onClick={translate} className="btn-translate">Translate</button>
         {translateText && (
           <div className="box">
             <p>{translateText}</p>

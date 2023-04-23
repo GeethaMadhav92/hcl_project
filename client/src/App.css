@@ -2,3 +2,8 @@ body {
   /* background-color: #10002b; */
   background-color: #252323;
 }
+.btn-translate:hover{
+  background-color: #252323;
+  color: white;
+  border: 2px solid white;
+}
